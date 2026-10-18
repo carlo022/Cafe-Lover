@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Add this line to tell Tailwind v4 to toggle dark mode via the .dark class */
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-coffee-50: #fdfaf7;
+  --color-coffee-100: #f7ede2;
+  --color-coffee-600: #8c6239;
+  --color-coffee-800: #5c3a21;
+  --color-coffee-900: #36220f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
