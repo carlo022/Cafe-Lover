@@ -1,16 +1,106 @@
-# React + Vite
+# Cafe-Lover
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive coffee shop website built with React and Vite. Cafe-Lover presents a café's hero section, menu, photo gallery, contact information, and a light/dark theme toggle.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive navigation and page sections
+- Featured menu with animated content
+- Café photo gallery
+- Contact and location information
+- Light and dark themes
+- Smooth animations powered by Framer Motion
+- Iconography from Lucide React
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite 8
+- Tailwind CSS 4
+- Framer Motion
+- Lucide React
+- ESLint
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+Cafe-Lover/
+├── public/          # Static assets and favicons
+├── src/
+│   ├── assets/      # Images and imported resources
+│   ├── components/  # Reusable UI components
+│   ├── context/     # React context providers
+│   ├── sections/    # Hero, menu, gallery, and contact sections
+│   ├── App.jsx      # Main application component
+│   ├── index.css    # Global styles
+│   └── main.jsx     # Application entry point
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20 or newer
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/carlo022/Cafe-Lover.git
+cd Cafe-Lover
+npm install
+```
+
+### Run Locally
+
+```bash
+npm run dev
+```
+
+Open the local URL shown by Vite in your browser.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The production-ready files will be generated in the `dist` directory.
+
+### Preview the Production Build
+
+```bash
+npm run preview
+```
+
+### Run the Linter
+
+```bash
+npm run lint
+```
+
+## Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server |
+| `npm run build` | Create a production build |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint checks |
+
+## Contributing
+
+Contributions are welcome.
+
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature/your-feature`.
+3. Commit your changes: `git commit -m "Add your feature"`.
+4. Push the branch: `git push origin feature/your-feature`.
+5. Open a pull request.
+
+## License
+
+No license has been specified for this project.
